@@ -64,7 +64,7 @@ app.use("/campgrounds/:id/comments", commentRoutes);
     // });
 
 
-// App listener version allows set to port 3000 for local environments
+// App listener version allows set to port 3000 for local environments.
 app.listen(process.env.PORT || 3000, function () {
     console.log("The CampFinder Server has started!");
 });
