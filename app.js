@@ -59,12 +59,12 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 //=============
 
 // Standard app listener:
-    // app.listen(process.env.PORT, process.env.IP, function(){
-    //     console.log("The CampFinder server has started!");
-    // });
+    app.listen(process.env.PORT, process.env.IP, function(){
+        console.log("The CampFinder server has started!");
+    });
 
 
 // App listener version allows set to port 3000 for local environments.
-app.listen(process.env.PORT || 3000, function () {
-    console.log("The CampFinder Server has started!");
-});
+    // app.listen(process.env.PORT || 3000, function () {
+    //     console.log("The CampFinder Server has started!");
+    // });
