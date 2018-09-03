@@ -18,7 +18,7 @@ const   commentRoutes       = require("./routes/comments"),
 
 
 
-mongoose.connect("mongodb://localhost:27017/camp_finder", {
+mongoose.connect("mongodb://localhost/camp_finder", {
     useNewUrlParser: true
 });
 app.use(bodyParser.urlencoded({
