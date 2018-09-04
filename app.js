@@ -18,9 +18,21 @@ const   commentRoutes       = require("./routes/comments"),
 
 
 
-mongoose.connect("mongodb://localhost:27017/camp_finder", {
-    useNewUrlParser: true
-});
+//mongoose connect string for local database:
+    // mongoose.connect("mongodb://localhost:27017/camp_finder", {
+    //     useNewUrlParser: true
+    // });
+
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/camp_finder";
+mongoose.connect(url, { useNewUrlParser: true });
+
+// mongoose connect string for mLab database:
+    // mongoose.connect("mongodb://ChrisDev:007LostFound@ds143932.mlab.com:43932/camp_finder", {
+    //     useNewUrlParser: true
+    // });
+
+
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -59,12 +71,12 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 //=============
 
 // Standard app listener:
-    // app.listen(process.env.PORT, process.env.IP, function(){
-    //     console.log("The CampFinder server has started!");
-    // });
+    app.listen(process.env.PORT, process.env.IP, function(){
+        console.log("The CampFinder server has started!");
+    });
 
 
 // App listener version allows set to port 3000 for local environments.
-app.listen(process.env.PORT || 3000, function () {
-    console.log("The CampFinder Server has started!");
-});
+    // app.listen(process.env.PORT || 3000, function () {
+    //     console.log("The CampFinder Server has started!");
+    // });

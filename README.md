@@ -10,7 +10,7 @@ Note: users must register via the sign-in page to add campsites but seed data is
 
 
 
-![](https://raw.githubusercontent.com/CLewisMessina/Express Mongo Blog App/master/landing.png)
+![](https://github.com/CLewisMessina/Express_MongoDB_CampSite_App/blob/master/landing.png)
 
 **Code base:** HTML, CSS, JavaScript, EJS
 
