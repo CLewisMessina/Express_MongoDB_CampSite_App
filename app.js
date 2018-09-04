@@ -17,10 +17,21 @@ const   commentRoutes       = require("./routes/comments"),
         indexRoutes         = require("./routes/index");
 
 
+//mongoose connect string for local database:
+    // mongoose.connect("mongodb://localhost/camp_finder", {
+    //     useNewUrlParser: true
+    // });
 
-mongoose.connect("mongodb://localhost/camp_finder", {
+//mLab string:
+    // mongodb://clewismessina:Horsesa$5@ds143932.mlab.com:43932/camp_finder
+
+// mongoose connect string for mLab database:
+mongoose.connect("mongodb://clewismessina:Horsesa$5@ds143932.mlab.com:43932/camp_finder", {
     useNewUrlParser: true
 });
+
+
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
