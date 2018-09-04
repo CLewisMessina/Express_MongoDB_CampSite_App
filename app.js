@@ -23,7 +23,8 @@ const   commentRoutes       = require("./routes/comments"),
     //     useNewUrlParser: true
     // });
 
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/camp_finder";
+mongoose.connect(url);
 
 // mongoose connect string for mLab database:
     // mongoose.connect("mongodb://ChrisDev:007LostFound@ds143932.mlab.com:43932/camp_finder", {
