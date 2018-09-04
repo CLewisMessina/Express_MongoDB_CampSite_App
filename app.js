@@ -23,13 +23,12 @@ console.log(process.env.DATABASEURL);
     //     useNewUrlParser: true
     // });
 
-//mLab string:
-    // mongodb://clewismessina:Horsesa$5@ds143932.mlab.com:43932/camp_finder
+mongoose.connect(process.env.DATABASEURL);
 
 // mongoose connect string for mLab database:
-mongoose.connect("mongodb://ChrisDev:007LostFound@ds143932.mlab.com:43932/camp_finder", {
-    useNewUrlParser: true
-});
+    // mongoose.connect("mongodb://ChrisDev:007LostFound@ds143932.mlab.com:43932/camp_finder", {
+    //     useNewUrlParser: true
+    // });
 
 
 
