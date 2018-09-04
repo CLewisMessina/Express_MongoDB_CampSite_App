@@ -18,7 +18,7 @@ const   commentRoutes       = require("./routes/comments"),
 
 
 //mongoose connect string for local database:
-    // mongoose.connect("mongodb://localhost/camp_finder", {
+    // mongoose.connect("mongodb://localhost:27017/camp_finder", {
     //     useNewUrlParser: true
     // });
 
