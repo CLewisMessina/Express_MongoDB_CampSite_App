@@ -27,7 +27,7 @@ console.log(process.env.DATABASEURL);
     // mongodb://clewismessina:Horsesa$5@ds143932.mlab.com:43932/camp_finder
 
 // mongoose connect string for mLab database:
-mongoose.connect("mongodb://clewismessina:Horsesa$5@ds143932.mlab.com:43932/camp_finder", {
+mongoose.connect("mongodb://pete:007Fuck@ds143932.mlab.com:43932/camp_finder", {
     useNewUrlParser: true
 });
 
