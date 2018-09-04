@@ -16,6 +16,7 @@ const   commentRoutes       = require("./routes/comments"),
         campgroundRoutes    = require("./routes/campgrounds"),
         indexRoutes         = require("./routes/index");
 
+console.log(process.env.DATABASEURL);
 
 //mongoose connect string for local database:
     // mongoose.connect("mongodb://localhost:27017/camp_finder", {
