@@ -22,6 +22,8 @@ Note: users must register via the sign-in page to add campsites but seed data is
 
 **Code Tools:** MS Visual Studio Code
 
+**Working Example:** https://hidden-caverns-51675.herokuapp.com/
+
 
 ### PROJECT HIGHLIGHTS
 This is my version of the YelpCamp app from the Colt Steel Web Developer Bootcamp course. 

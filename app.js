@@ -22,6 +22,12 @@ const   commentRoutes       = require("./routes/comments"),
 var url = process.env.DATABASEURL || "mongodb://localhost:27017/camp_finder";
 mongoose.connect(url, { useNewUrlParser: true });
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0c5653bdb792c54232d8d30bb9763aa80fb7abcc
 
 app.use(bodyParser.urlencoded({
     extended: true
