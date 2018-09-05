@@ -18,19 +18,9 @@ const   commentRoutes       = require("./routes/comments"),
 
 
 
-//mongoose connect string for local database:
-    // mongoose.connect("mongodb://localhost:27017/camp_finder", {
-    //     useNewUrlParser: true
-    // });
 
 var url = process.env.DATABASEURL || "mongodb://localhost:27017/camp_finder";
 mongoose.connect(url, { useNewUrlParser: true });
-
-// mongoose connect string for mLab database:
-    // mongoose.connect("mongodb://ChrisDev:007LostFound@ds143932.mlab.com:43932/camp_finder", {
-    //     useNewUrlParser: true
-    // });
-
 
 
 app.use(bodyParser.urlencoded({
@@ -71,7 +61,7 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 //=============
 
 // Standard app listener:
-    app.listen(process.env.PORT, process.env.IP, function(){
+    app.listen(process.env.PORT || 3000, process.env.IP, function(){
         console.log("The CampFinder server has started!");
     });
 
